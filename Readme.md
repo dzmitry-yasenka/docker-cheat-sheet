@@ -33,6 +33,16 @@ docker container rm [OPTIONS] CONTAINER [CONTAINER...] --- remove a container
 docker container prune [OPTIONS] --- remove all stopped containers  
 docker container rm $(docker container ls -aq) -f --- remove all containers  
 
+## Docker Compose [Command]
+docker-compose up --- start services  
+docker-compose up & --- start services with debug information  
+docker-compose up -d --- start services as daemons  
+docker-compose down --- stop services and delete container  
+docker-compose stop --- stop services  
+docker-compose restart --- restart services  
+docker-compose ps --- show information about services  
+docker-compose top --- the command that shows processes running inside of each service  
+
 ## Useful links
 https://labs.play-with-docker.com/ --- the way of spinning up temporary Docker environment  
 
